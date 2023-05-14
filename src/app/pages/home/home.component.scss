@@ -1,6 +1,5 @@
 .box {
   text-align: center;
-
   &__info {
     background-color: #f38d68;
     padding: 10px;
@@ -12,7 +11,6 @@
       font-weight: bold;
     }
   }
-
   &__header {
     position: relative;
     display: inline-block;
@@ -24,7 +22,6 @@
       vertical-align: top;
       width: 100%;
     }
-
     &--titlecount{
       position: absolute;
       top: 40%;
@@ -40,7 +37,6 @@
         text-shadow: 0 0 0.2em black;
       }
     }
-
     &--count {
       position: absolute;
       top: 55%;
@@ -56,7 +52,6 @@
     }
   }
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -64,7 +59,6 @@
   gap: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
-
   p {
     text-align: justify;
     font-size: 35px;
@@ -72,21 +66,17 @@
     padding-top: 40px;
     font-weight: 300;
   }
-
   &__marcas {
     display: flex;
     width: 100%;
     gap: 20px;
-
     img {
       width: 100%;
     }
-
     &--adidas {
       position: relative;
       text-align: center;
       cursor: pointer;
-
       p {
         position: absolute;
         top: 1%;
@@ -103,31 +93,25 @@
     display: flex;
     width: 100%;
     gap: 20px;
-
     img {
       width: 100%;
     }
   }
-
   &__colecciones {
     width: 100%;
     gap: 20px;
-
     img {
       width: 25%;
     }
   }
-
   &__sneaker {
     position: relative;
     text-align: center;
     cursor: pointer;
-
     img {
       border-radius: 20px;
       width: 350px;
     }
-
     &--title {
       position: absolute;
       top: 50%;
@@ -139,16 +123,13 @@
       cursor: pointer;
     }
   }
-
   &__hoodies {
     position: relative;
     text-align: center;
-
     img {
       border-radius: 20px;
       width: 350px;
     }
-
     &--title {
       position: absolute;
       top: 50%;
@@ -159,7 +140,6 @@
       text-shadow: 0 0 0.2em black;
     }
   }
-
   &__about {
     display: flex;
     width: 100%;
@@ -221,7 +201,6 @@
       font-size: 1.4rem;
       color: #000;
     }
-
     input::placeholder {
       opacity: 0.5;
       font-size: 15px;
@@ -229,11 +208,9 @@
     }
   }
 }
-
 @media screen and (max-width: 920px) {
   .box {
     text-align: center;
-
     &__header {
       text-align: center;
 
@@ -243,7 +220,6 @@
         vertical-align: top;
         width: 100%;
       }
-
       p {
         position: absolute;
         top: 40%;
@@ -262,7 +238,6 @@
       }
     }
   }
-
   .container {
     display: flex;
     flex-direction: column;
@@ -270,7 +245,6 @@
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 100px;
-
     p {
       text-align: justify;
       font-size: 30px;
@@ -278,7 +252,6 @@
       padding-top: 20px;
       font-weight: 300;
     }
-
     &__marcas {
       display: flex;
       flex-direction: column;
@@ -316,11 +289,9 @@
       flex-direction: column;
       flex-direction: column-reverse;
       width: 100%;
-
       &--img {
         width: 100%;
       }
-
       &--box {
         width: 100%;
         margin: 0;
