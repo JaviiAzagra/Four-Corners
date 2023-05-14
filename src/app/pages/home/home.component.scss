@@ -20,14 +20,13 @@
     &--titlecount{
       position: absolute;
       top: 45%;
-      left: 100%;
+      left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
       p {
         color: white;
         font-size: 30px;
         font-weight: bold;
-        transform: translate(-50%, -50%);
         text-shadow: 0 0 0.2em black;
       }
     }
@@ -40,7 +39,6 @@
       span {
         color: white;
         font-size: 30px;
-        transform: translate(-50%, -50%);
       }
     }
   }
@@ -182,7 +180,7 @@
       &--titlecount{
         position: absolute;
         top: 40%;
-        left: 100%;
+        left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
   
@@ -190,7 +188,6 @@
           color: white;
           font-size: 30px;
           font-weight: bold;
-          transform: translate(-50%, -50%);
           text-shadow: 0 0 0.2em black;
         }
       }
@@ -198,7 +195,6 @@
         position: absolute;
         top: 55%;
         left: 50%;
-        transform: translate(-50%, -50%);
         width: 100%;
         
         span {
