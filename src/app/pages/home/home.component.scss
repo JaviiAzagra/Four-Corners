@@ -4,18 +4,13 @@
     background-color: #f38d68;
     padding: 10px;
     border-bottom: 1px solid black;
-    /*     border-top: 1px solid black; */
-
     p {
       color: black;
       font-weight: bold;
     }
   }
   &__header {
-    position: relative;
-    display: inline-block;
     text-align: center;
-
     img {
       height: auto;
       border-style: none;
@@ -24,11 +19,10 @@
     }
     &--titlecount{
       position: absolute;
-      top: 40%;
-      left: 50%;
+      top: 45%;
+      left: 100%;
       transform: translate(-50%, -50%);
       width: 100%;
-
       p {
         color: white;
         font-size: 30px;
@@ -39,11 +33,10 @@
     }
     &--count {
       position: absolute;
-      top: 55%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
-      
       span {
         color: white;
         font-size: 30px;
@@ -102,42 +95,6 @@
     gap: 20px;
     img {
       width: 25%;
-    }
-  }
-  &__sneaker {
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    img {
-      border-radius: 20px;
-      width: 350px;
-    }
-    &--title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: white;
-      font-size: 40px;
-      transform: translate(-50%, -50%);
-      text-shadow: 0 0 0.2em black;
-      cursor: pointer;
-    }
-  }
-  &__hoodies {
-    position: relative;
-    text-align: center;
-    img {
-      border-radius: 20px;
-      width: 350px;
-    }
-    &--title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      color: white;
-      font-size: 40px;
-      transform: translate(-50%, -50%);
-      text-shadow: 0 0 0.2em black;
     }
   }
   &__about {
@@ -212,29 +169,43 @@
   .box {
     text-align: center;
     &__header {
+      position: relative;
+      display: inline-block;
       text-align: center;
-
+  
       img {
-        height: 100%;
+        height: auto;
         border-style: none;
         vertical-align: top;
         width: 100%;
       }
-      p {
+      &--titlecount{
         position: absolute;
         top: 40%;
-        left: 50%;
-        font-size: 25px;
-        color: white;
-        font-weight: bold;
+        left: 100%;
         transform: translate(-50%, -50%);
-        text-shadow: 0 0 0 0.3em black;
+        width: 100%;
+  
+        p {
+          color: white;
+          font-size: 30px;
+          font-weight: bold;
+          transform: translate(-50%, -50%);
+          text-shadow: 0 0 0.2em black;
+        }
       }
-      span {
+      &--count {
         position: absolute;
-        top: 46%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
+        
+        span {
+          color: white;
+          font-size: 30px;
+          transform: translate(-50%, -50%);
+        }
       }
     }
   }
