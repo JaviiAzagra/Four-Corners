@@ -1,89 +1,113 @@
-.title{
-    text-align: center;
-    padding-top: 100px;
+.title {
+  text-align: center;
+  padding-top: 100px;
 }
 
-.container{
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgb(181, 181, 181);
+  line-height: 26px;
+
+  p {
+    text-align: center;
+    font-size: 17px;
+    color: #3e3e3e;
+  }
+
+  span {
+    font-weight: 600;
+    text-align: center;
+    color: #f07c51;
+    font-size: 15px;
+  }
+
+  &__cards {
     display: flex;
-    justify-content: center;
-    gap: 90px;
-    flex-wrap: wrap;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    border-bottom: 1px solid rgb(181, 181, 181);
-    line-height: 26px;
-
-    p{
-        font-size: 17px;
-        padding-left: 100px;
-        color: #3e3e3e;
+    flex-direction: column;
+    img {
+      width: 400px;
+      padding-bottom: 30px;
     }
-
-    span{
-        font-weight: 600;
-        color: black;
-        padding-left: 100px;
-        font-size: 15px;
-    }
-
-    &__cards{
-        display: flex;
-        flex-direction: column;
-        img{
-            width: 400px;
-            padding-bottom: 30px;
-        }
-    }
-
+  }
 }
 
+.historia {
+  text-align: center;
+  padding: 50px 500px 50px 500px;
 
-.historia{
+  h4 {
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  p {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .title {
     text-align: center;
-    padding: 50px 500px 50px 500px;
+    padding-top: 40px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2px;
+    padding-top: 20px;
+    padding-left: 0;
+    line-height: 17px;
 
-    h4{
-        padding-bottom: 20px;
-        font-size: 1.5rem
+    &__cards {
+      p {
+        font-size: 13px;
+        padding-left: 10px;
+      }
+      span {
+        font-weight: 600;
+        color: #f07c51;
+        padding-left: 10px;
+        font-size: 12px;
+      }
+      img {
+        width: 194px;
+        padding-top: 20px;
+      }
     }
-    p{
-        padding-bottom: 50px;
+  }
+
+  .historia {
+    padding: 20px;
+    text-align: justify;
+
+    p {
+      font-size: 14px;
+      padding-top: 15px;
+      padding-left: 0;
     }
-    
+  }
 }
 
-@media screen and (max-width: 690px) {
-    .title{
-        text-align: center;
-        padding-top: 40px;
+@media screen and (max-width: 375px) {
+  .container {
+    &__cards {
+      img {
+        width: 186px;
+      }
     }
-    .container{
-        display: flex;
-        justify-content: flex-start;
-        gap: 2px;
-        padding-top: 20px;
-        padding-left: 0;
-        line-height: 17px;
-        
-        &__cards{
-            p{
-                font-size: 13px;
-                padding-left: 10px;
-            }
-            span{
-                font-weight: 600;
-                color: black;
-                padding-left: 10px;
-                font-size: 12px;
-            }
-            img{
-                width: 194px;
-                padding-top: 20px;
-            }
-        }
-    }
+  }
+}
 
-    .historia{
-        padding: 50px 60px 50px 60px;
+@media screen and (max-width: 375px) {
+  .container {
+    &__cards {
+      img {
+        width: 170px;
+      }
     }
+  }
 }
