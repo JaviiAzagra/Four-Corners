@@ -14,6 +14,8 @@
   }
 
   &__header {
+    position: relative;
+    display: inline-block;
     text-align: center;
 
     img {
@@ -23,23 +25,34 @@
       width: 100%;
     }
 
-    p {
+    &--titlecount{
       position: absolute;
-      top: 45%;
+      top: 40%;
       left: 50%;
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
       transform: translate(-50%, -50%);
-      text-shadow: 0 0 0.2em black;
+      width: 100%;
+
+      p {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 0.2em black;
+      }
     }
-    span {
+
+    &--count {
       position: absolute;
-      top: 50%;
+      top: 55%;
       left: 50%;
-      color: white;
-      font-size: 30px;
       transform: translate(-50%, -50%);
+      width: 100%;
+      
+      span {
+        color: white;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }
