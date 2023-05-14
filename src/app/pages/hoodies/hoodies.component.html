@@ -1,0 +1,57 @@
+<div>
+  
+  <h1 class="title">Hoodies</h1>
+  <div class="container">
+    <h1 *ngIf="!myHoodies">Cargando todas las hoodies...</h1>
+    <div
+      class="container__cards"
+      routerLink="hoodies/{{ item._id }}"
+      *ngFor="let item of myHoodies"
+    >
+      <img src="{{ item.img }}" alt="{{ item.model }}" />
+      <p>{{ item.brand }} {{ item.name }}</p>
+      <p>{{ item.model }}</p>
+      <span class="price">{{ item.price }},00 €</span>
+    </div>
+  </div>
+
+  <div class="historia">
+    <h4>
+      Dale un toque sofisticado a tu armario con la ropa de diseño de nuestra
+      selección
+    </h4>
+    <p>
+      Si tu lema es «Dress to impress», vestir para impresionar, estás en el
+      sitio correcto. Los expertos de moda de SVD están siempre al tanto de las
+      últimas tendencias en ropa de lujo y elegante, y seleccionan cada
+      temporada los mejores diseños que, sin fallar, te harán destacar. Puedes
+      conseguir ese toque refinado y a la vez de vanguardia llevando un polo de
+      Polo Ralph Lauren, unos pantalones de Rick Owens o una camiseta de KENZO,
+      así como las demás propuestas de Neighborhood, Fred Perry, Undercover, 11
+      by Boris Bidjan Saberi, Junya Watanabe MAN, Comme des Garçons y muchas
+      más. Gracias a la oferta SVD crearás tu look original sin renunciar a ese
+      toque de clase que tanto te gusta. Elige tus prendas favoritas y recíbelas
+      en tu casa en tiempo récord con nuestro servicio de envío express.
+    </p>
+
+    <h4>
+      Descubre las últimas tendencias en ropa streetwear y actualiza tu armario
+    </h4>
+    <p>
+      En JaviShop sabemos de la importancia que tiene la ropa para definir nuestro
+      estilo, así como la diferencia que puedes marcar llevando prendas de
+      tendencia y de calidad. Si lo tuyo es la ropa casual y urbana, no puedes
+      perderte nuestra selección exclusiva: encontrarás una amplia variedad de
+      camisetas, pantalones, sudaderas, abrigos, gorras y calcetines para
+      completar tus outfits junto con tus zapatillas favoritas. Contamos con
+      diferentes productos de marcas de renombre como Nike, Jordan, adidas,
+      Vans, Converse, Puma, Reebok y New Balance, así como marcas en ascenso
+      como Carhartt WIP, GCDS, Hombre Niño, KidSuper, WTAPS, Stüssy, SHOOP
+      Clothing, Real Bad Man y Patta. Sin olvidarnos de las colaboraciones más
+      sorprendentes de cada temporada, ya sean consolidadas o totalmente
+      inesperadas. Si buscas ropa para hombre, mujer o niño, o más bien ropa sin
+      género, echa un vistazo a nuestra selección y ¡hazte con tu ropa urban
+      favorita!
+    </p>
+  </div>
+</div>

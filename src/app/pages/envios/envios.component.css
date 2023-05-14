@@ -1,0 +1,61 @@
+.shipping {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.shipping h1 {
+  font-size: 34px;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+.shipping__text {
+  width: 100%;
+  max-width: 47rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  font-size: 15px;
+}
+.shipping__text p {
+  display: block;
+  -webkit-margin-before: 3em;
+          margin-block-start: 3em;
+  -webkit-margin-after: 3em;
+          margin-block-end: 3em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.shipping__text ul {
+  list-style: square;
+  padding-left: 2rem;
+}
+.shipping__info {
+  width: 100%;
+  max-width: 47rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  font-size: 15px;
+}
+.shipping__info p {
+  display: block;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0.2em;
+          margin-block-end: 0.2em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.shipping__info a {
+  text-decoration: underline;
+  cursor: pointer;
+}/*# sourceMappingURL=envios.component.css.map */

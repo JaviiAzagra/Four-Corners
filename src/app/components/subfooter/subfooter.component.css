@@ -1,0 +1,18 @@
+.subfooter {
+  background-color: #f07c51;
+  padding: 10px;
+  border-top: 1px solid black;
+  text-align: center;
+}
+.subfooter p {
+  color: black;
+}
+.subfooter a {
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+.subfooter a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=subfooter.component.css.map */

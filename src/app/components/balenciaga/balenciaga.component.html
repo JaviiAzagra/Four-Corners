@@ -1,0 +1,61 @@
+
+<div class="sneakers">
+
+    <h1 class="title">Balenciaga</h1>
+    <p class="historia">
+      Viste tus pies para cada ocasión con nuestra selección prémium de calzado
+      para hombre y mujer. Aquí encontrarás desde zapatillas de edición limitada
+      hasta sandalias atrevidas para el verano. Nuestra oferta también incluye
+      zapatos elegantes, botas invernales y una línea de calzado técnico y
+      deportivo.
+    </p>
+    <!-- <input type="search"/> -->
+    <div class="allsneakers">
+      <button routerLink="/sneakers">Ver todo en Sneakers</button>
+    </div>
+    <div class="container">
+      <h1 *ngIf="!myBalenciaga">Cargando todas las sneakers...</h1>
+      <div
+        class="container__cards"
+        routerLink="sneakers/{{ item._id }}"
+        *ngFor="let item of myBalenciaga"
+      >
+        <img src="{{ item.img }}" alt="{{ item.model }}" />
+        <p>{{ item.brand }} {{ item.name }}</p>
+        <p>{{ item.model }}</p>
+        <span class="price">{{ item.price }},00 €</span>
+      </div>
+      
+    </div>
+    
+    <div class="historia">
+      <h4>Sneakers: un icono cultura que cambió la historia del calzado</h4>
+      <p>
+        Las sneakers hablan y participan en todo, desde la clase social, los
+        intereses deportivos, la cultura, el gusto por la música, hasta el deseo
+        de andar sin sentirse agobiado por el calzado incómodo. Desde su debut
+        hace varias décadas, las zapatillas han recorrido un largo camino hasta
+        llegar a ser consideradas un icono cultural que cambió la historia del
+        calzado para siempre. Sus constantes mejoras, los materiales innovadores
+        en que se fabrican y las tecnologías deportivas que incluyen para mejorar
+        el rendimiento las han convertido en una de las primeras opciones cuando
+        se trata de elegir calzado.
+      </p>
+  
+      <h4>¿Qué tienen de especial las zapatillas de marca?</h4>
+      <p>
+        Las zapatillas deportivas han conquistado diferentes escenarios y han
+        pasado de ser un símbolo de la cultura urbana a convertirse en auténticas
+        piezas de lujo. Son tan poderosas que sectores como el lujo se rindieron
+        ante su gran influencia y las introdujeron en sus colecciones como un
+        básico de línea y un elemento imprescindible en las pasarelas. Por eso,
+        nuestros expertos en moda han hecho una selección de los modelos más
+        punteros de cada temporada, ofreciendo no solo la comodidad que les
+        caracteriza sino el exquisito diseño y los materiales de lujo que ahora
+        les acompaña. En nuestra tienda online podrás encontrar diversas versiones
+        de zapatillas de marca que ofrecen una visión fresca y desenfadada de la
+        moda prémium.
+      </p>
+    </div>
+  </div>
+  

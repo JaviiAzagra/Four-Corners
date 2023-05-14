@@ -1,0 +1,97 @@
+<!-- <nav class="nav">
+  
+  <div class="nav__links">
+    <a router routerLink="">Home</a>
+
+    <div class="dropdown">
+      <a routerLink="/sneakers">Sneakers</a>
+      <div class="dropdown-content">
+        <a routerLink="/sneakers/adidas">Adidas</a>
+        <a routerLink="/sneakers/nike">Nike</a>
+        <a routerLink="/sneakers/balenciaga">Balenciaga</a>
+        
+      </div>
+    </div>
+    <a routerLink="hoodies">Hoodies</a>
+    
+  </div>
+  <div router routerLink="/" class="nav__title">
+    <img src="../../../assets/logo.png" alt="">
+    <h1 >Four Corners</h1>
+  </div> -->
+<!-- <div class="nav__links">
+    <a routerLink="account">Account</a>
+    <a routerLink="/sneakers/balenciaga">Cart</a>
+    <a routerLink="/sneakers/balenciaga">EUR €</a>
+  </div> -->
+<!-- </nav> -->
+
+<!-- <header class="main-header">
+  <a class="main-logo">
+    <div router routerLink="/" class="nav__title">
+      <img src="../../../assets/logo.png" alt="">
+      <h1 >Four Corners</h1>
+    </div>
+  </a>
+  <nav id="nav" class="main-nav">
+    <div class="nav-links">
+      <a class="link-item" router routerLink="">Home</a>
+      <div class="dropdown">
+        <a class="link-item" routerLink="/sneakers">Sneakers</a>
+        <div class="dropdown-content">
+          <a routerLink="/sneakers/adidas">Adidas</a>
+          <a routerLink="/sneakers/nike">Nike</a>
+          <a routerLink="/sneakers/balenciaga">Balenciaga</a> 
+        </div>
+      </div>
+      <a class="link-item" routerLink="hoodies">Hoodies</a>
+    </div>
+  </nav>
+  <button id="button-menu" class="button-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <script src="../../../index.js"></script>
+</header> -->
+
+<header class="header">
+  <h1 class="header__h1">
+    <div router routerLink="/" class="nav__title">
+      <img src="../../../assets/logo.png" alt="" />
+      <h1>Four Corners</h1>
+    </div>
+  </h1>
+
+  <button (click)="setActive()" class="header__button">
+    <svg
+      class="header__svg"
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+      />
+    </svg>
+  </button>
+
+  <nav class="header__nav" [ngClass]="{ 'header__nav--activo': active }">
+
+    <div class="header__ul">
+      <a class="header__li" router routerLink="">Home</a>
+      <div class="dropdown">
+        <a class="header__li" routerLink="/sneakers">Sneakers</a>
+        <!-- <div class="dropdown-content">
+          <a routerLink="/sneakers/adidas">Adidas</a>
+          <a routerLink="/sneakers/nike">Nike</a>
+          <a routerLink="/sneakers/balenciaga">Balenciaga</a>
+        </div> -->
+      </div>
+      <a class="header__li" routerLink="hoodies">Hoodies</a>
+    </div>
+  </nav>
+</header>

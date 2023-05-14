@@ -1,0 +1,119 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    background-color: black;
+    color: white;
+    padding: 70px;
+
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        img{
+            width: 70px;
+        }
+        h1{
+            font-size: 20px;
+            line-height: 0;
+            cursor: pointer;
+        }
+
+        &--social{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            img{
+                width: 23px;
+            }
+        }
+
+        p{
+            font-size: 15px;
+        }
+    }
+
+    &__terminos{
+        display: flex;
+        justify-content: space-around;
+        gap: 70px;
+
+        h5{
+            font-size: 10px;
+            padding-bottom: 10px;
+            color: gray;
+        }
+
+        ul{
+            list-style: none;
+            font-size: 14px;
+            line-height: 30px;
+            cursor: pointer;
+
+            li:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+
+        h5{
+            font-size: 10px;
+            padding-bottom: 10px;
+            color: gray;
+        }
+        P{
+            line-height: 30px;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        &__terminos{
+            display: flex;
+            
+        }
+
+        &__contact{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        &__terminos{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__contact{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
