@@ -11,10 +11,12 @@ export class NikeComponent implements OnInit {
   myNike?: any[];
 
   constructor(private sneakerService: ArmarioService) {
+
     this.sneakerService.getAllNike().subscribe((data:any) => {
       console.log(data);
       this.myNike = [...data];
     })
+    
    }
 
   ngOnInit(): void {

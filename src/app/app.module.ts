@@ -18,7 +18,9 @@ import { EnviosComponent } from './pages/envios/envios.component';
 import { DevolucionesComponent } from './pages/devoluciones/devoluciones.component';
 import { AccountComponent } from './pages/account/account.component';
 @NgModule({
+
   declarations: [
+    
     AppComponent,
     NavbarComponent,
     FooterComponent,
@@ -34,13 +36,16 @@ import { AccountComponent } from './pages/account/account.component';
     AccountComponent
 
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     CountdownTimerModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
